@@ -1,0 +1,109 @@
+:root {
+  /*color*/
+  --bar-color: #e8eaf6;
+  --point-color: #c5cae9;
+  --section2-color: #b6b8c3;
+  --section1-color: #ffffff;
+  --black-color: #212121;
+  --red-color: #d32f2f;
+  --blue-color: #2196f3;
+  --purple-color: #e040fb;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Libre Franklin";
+}
+
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+/*header*/
+.bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0.5rem;
+  background-color: var(--bar-color);
+  align-items: center;
+}
+
+.bar__title {
+  font-size: 2rem;
+}
+.bar__menu ul {
+  display: flex;
+  font-size: 1rem;
+}
+.bar__menu ul li a {
+  padding: 0.5em 0.5em;
+  color: var(--black-color);
+  text-decoration: none;
+}
+.bar__menu ul li a:hover {
+  background-color: var(--point-color);
+  border-radius: 10px;
+}
+
+.bar__icons {
+  display: flex;
+}
+.bar__icons a {
+  margin-right: 0.3rem;
+}
+.bar__icons a .fa-twitter {
+  color: var(--blue-color);
+}
+.bar__icons a .fa-instagram {
+  background-color: var(--purple-color);
+}
+.bar__icons a .fa-youtube {
+  color: var(--red-color);
+}
+
+/*main*/
+section {
+  display: flex;
+  padding: 0.5rem;
+  background-color: var(--section1-color);
+}
+section video {
+  width: 50vw;
+  padding-right: 0.5em;
+}
+section .info {
+  display: flex;
+}
+section .info .video__title {
+  font-size: 1rem;
+}
+section .info .video__info {
+  font-size: 0.9rem;
+}
+
+section .img > ul {
+  display: flex;
+  background-color: var(--section2-color);
+}
+section .img ul li img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .bar {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  .bar__menu {
+    flex-direction: column;
+    padding: 0.7rem 0;
+  }
+  .bar__icons {
+    margin-top: 0.2rem;
+    padding: 0;
+  }
+  .
+}
